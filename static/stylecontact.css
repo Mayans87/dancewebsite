@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    margin: 12px 0;
+}
+.inputinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myinput{
+width: 40%;
+padding: 9px;
+margin: 12px;
+font-size: 16px;
+border: 5px solid turquoise;
+border-radius: 10px;
+outline: none;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 18px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 15px;
+}
+.btn:hover{
+    color: turquoise;
+    cursor: pointer;
+}
+.container{
+    margin-top: 50px;
+    justify-content: center;
+    min-height: 90vh;
+}

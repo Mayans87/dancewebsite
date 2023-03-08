@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+*{
+    font-family: 'Gloock', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar li a{
+    text-decoration: none;
+}
+#navbar li{
+
+    list-style: none;
+    padding: 7px 20px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+nav{
+    background-color: black;
+    padding: 13px 14px;
+}
+#forintro{ color: white;
+   display: flex;
+   flex-direction: column;
+    justify-content: center ;
+    align-items:  center;
+    font-size: 3rem; 
+    height: 300px;
+    background-color: red;
+    background: url('https://i.pinimg.com/originals/f0/10/48/f01048ea7d424f7403121884cf68f9a9.png');
+    background-size: contain  ;
+}
+#forsponsors{
+    background: linear-gradient(
+        -225deg,
+        fuchsia 20%,
+        cyan 35%,
+        #ff1361 138%,
+        #fff800 100%
+      );
+      
+    height: 250px;}
+#footer{
+    background-color:black;
+    height: 100px;
+}
+#navbar li a{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+}
+div.small{
+    font-size: 2rem;
+}
+#navbar li a:hover{
+    color: fuchsia;
+}
+#forsponsors{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+   margin: auto;
+    
+}
+#mission{
+background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    height: 300px;
+}
+#mission h2{
+    padding-top:12px;
+    text-align: center;
+}
+.card h3{
+    margin: 12px;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px 20px;
+    height: 209px;
+    background-color: black;
+}
+div.card.c1{
+    color: white;
+    background: url('https://images.unsplash.com/photo-1518834107812-67b0b7c58434?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFuY2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+}
+div.card.c2{
+    color: white;
+    background: url('https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/01/31/Pictures/bhavana-habitat-january-hindustan-january-recital-kuchipudi_5796f8f6-4401-11ea-b306-d18e31211930.JPG');
+    background-size: cover;
+}
+div.card.c3{
+    color: black;
+    background: url('https://img.huffingtonpost.com/asset/56a7bc3c1a00001001ab156f.jpeg?ops=scalefit_960_noupscale&format=webp');
+    background-size: cover;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    white 20%,
+    cyan 29%,
+    #ff1361 38%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+#logo{ color:white;
+    font-size: 1rem;
+    font-weight: light;
+    font:icon;
+    margin-right: 552px;
+}
+#logo img{
+    overflow: hidden;
+    float: left;
+    display: flex;
+    margin: 0 0;
+    padding: 0;
+    height: 35px;
+    width: 57px;
+    filter: invert();
+ 
+}
+#sponsor{
+    height: 120px;
+    max-width: 1000px;
+margin: -26px;}
+.spimage{
+    height: 132%;
+    width: 195px;
+    margin-top: 35px; 
+    margin-bottom: 20px;
+   
+}
+#forsponsors h2{
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 30px;
+    
+
+}
+#footer
+{
+    background-color: black;
+    min-height: 22px;
+    max-height:9px ;
+    color:white;
+    text-align: center;
+}
+div.small:hover{
+    color:cyan;
+    cursor:grab;
+}
