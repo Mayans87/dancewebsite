@@ -21,7 +21,8 @@ const contactSchema = new mongoose.Schema({
     
 });
 const contact = mongoose.model('contact', contactSchema);
-app.use('/static', express.static('static'));   //static file usage.
+// app.use('/views');
+// app.use('/static', express.static('static'));   //static file usage.
 
 
 
@@ -29,6 +30,7 @@ app.use('/static', express.static('static'));   //static file usage.
   
   app.set('view engine','pug');
   app.set('views',path.join(__dirname,'views'))
+//   app.set('static',path.join(__dirname,'static'))
   app.use(bodyparser.json());
   app.use(express.urlencoded())  //middleware for posting data using express.
   
