@@ -31,21 +31,21 @@ const contact = mongoose.model('contact', contactSchema);
   app.set('view engine','pug');
   app.set('views',path.join(__dirname,'views'))
 //   app.set('static',path.join(__dirname,'static'))
-  app.use(bodyparser.json());
-  app.use(express.urlencoded())  //middleware for posting data using express.
-  
-  app.get('/',(req,res)=>{
-      console.log('server made req')
-      
-      res.status(200).render('index.pug');
-    })
-    app.post('/contact', (req, res)=>{
-        console.log('req rec')
-        const mydata = new contact(req.body);
-        mydata.save().then(()=>{
-            res.send('This item has been saved to the database')
-            
-            
+
+app.get('/',(req,res)=>{
+    console.log('server made req')
+    
+    res.status(200).render('index.pug');
+})
+app.use(bodyparser.json());
+app.use(express.urlencoded())  //middleware for posting data using express.
+app.post('/contact', (req, res)=>{
+    console.log('req rec')
+    const mydata = new contact(req.body);
+    mydata.save().then(()=>{
+        res.send('This item has been saved to the database')
+        
+        
         }).catch(()=>{
             res.status(400).send('item was not saved to the databse')
         });
