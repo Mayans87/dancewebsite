@@ -35,7 +35,7 @@ const contactSchema = new mongoose.Schema({
   app.get('/',(req,res)=>{
       console.log('server made req')
       
-      res.status(200).render('home.pug');
+      res.status(200).render('index.pug');
     })
     app.use('/static', express.static('static'));   //static file usage.
     app.post('/contact', (req, res)=>{
